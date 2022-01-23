@@ -1,0 +1,82 @@
+body {
+  background-color: #ebf0ff;
+  font-family: "IM Fell English SC", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 10px 0px;
+  width: 100vw;
+}
+
+.form {
+  margin: 10px 0px 20px;
+}
+
+.question {
+  width: 50%;
+  border: 0;
+  border-bottom: 2px solid #070606;
+  outline: 0;
+  font-family: "IM Fell English SC", serif;
+  font-size: 18px;
+  text-align: center;
+  background-color: #ebf0ff;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button {
+  width: 220px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #070606;
+  background-color: #ebf0ff;
+  color: #070606;
+  font-family: "IM Fell English SC", serif;
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hex-box {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 10%;
+}
+
+.hex-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lines {
+  display: block;
+  padding: 5px 0px;
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 300px;
+  height: 30px;
+}
+
+.changing-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 20%;
+  text-align: center;
+}
+
+.changing-line > h3 {
+  color: #a10e22;
+}
