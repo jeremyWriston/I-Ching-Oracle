@@ -4,6 +4,7 @@
 <head>
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,31 +14,37 @@
 
 <body>
 
+<!-- HEADER -->
+
   <div class="header-container">
     <h1 id="header">I Ching Oracle</h1>
   </div>
+
+<!-- FORM -->
 
   <form id="form" action="">
     <input id="question" type='text' placeholder="Enter question here..."></input>
     <button id="button">Generate Hexagram(s)</button>
   </form>
 
+<!-- HEXAGRAM 1 -->
+
   <div class="hex-box">
     <div class="hex-lines">
-      <img class="lines" src="yang.png" alt="">
-      <img class="lines" src="yangchanging.png" alt="">
-      <img class="lines" src="yang.png" alt="">
-      <img class="lines" src="yin.png" alt="">
-      <img class="lines" src="yinchanging.png" alt="">
-      <img class="lines" src="yin.png" alt="">
+      <img id="hex1-ln6" class="lines" src="yang.png" alt="">
+      <img id="hex1-ln5" class="lines" src="yangchanging.png" alt="">
+      <img id="hex1-ln4" class="lines" src="yang.png" alt="">
+      <img id="hex1-ln3" class="lines" src="yin.png" alt="">
+      <img id="hex1-ln2" class="lines" src="yinchanging.png" alt="">
+      <img id="hex1-ln1" class="lines" src="yin.png" alt="">
     </div>
     <div class="hex-text">
-      <h2>12. P'i / Standstill [Stagnation]</h2>
+      <h2 id="hex1-name">12. P'i / Standstill [Stagnation]</h2>
       <ul>
-        <li>above CH'IEN THE CREATIVE, HEAVEN</li>
-        <li>below K'UN THE RECEPTIVE, EARTH</li>
+        <li id="hex1-above">above CH'IEN THE CREATIVE, HEAVEN</li>
+        <li id="hex1-below">below K'UN THE RECEPTIVE, EARTH</li>
       </ul>
-      <h3>THE JUDGMENT</h3>
+      <h3 id="hex1-judgement">THE JUDGMENT</h3>
       <p>STANDSTILL. Evil people do not further
         The perseverance of the superior man.
         The great departs; the small approaches.</p>
@@ -49,6 +56,8 @@
         He does not permit himself to be honored with revenue.</p>
     </div>
   </div>
+
+<!-- CHANGING LINES -->
 
   <div class="reading-box changing-box">
     <div class="changing-line">
@@ -66,14 +75,16 @@
     </div>
   </div>
 
+<!-- HEXAGRAM 2-->
+
   <div class="hex-box">
     <div class="hex-lines">
-      <img class="lines" src="yang.png" alt="">
-      <img class="lines" src="yin.png" alt="">
-      <img class="lines" src="yang.png" alt="">
-      <img class="lines" src="yin.png" alt="">
-      <img class="lines" src="yang.png" alt="">
-      <img class="lines" src="yin.png" alt="">
+      <img id="hex2-ln6" class="lines" src="yang.png" alt="">
+      <img id="hex2-ln5" class="lines" src="yin.png" alt="">
+      <img id="hex2-ln4" class="lines" src="yang.png" alt="">
+      <img id="hex2-ln3" class="lines" src="yin.png" alt="">
+      <img id="hex2-ln2" class="lines" src="yang.png" alt="">
+      <img id="hex2-ln1" class="lines" src="yin.png" alt="">
     </div>
     <div class="hex-text">
       <h2>64. Wei Chi / Before Completion</h2>
@@ -99,6 +110,7 @@
     </div>
   </div>
 
+  <script src="app.js"></script>
 </body>
 
 </html>

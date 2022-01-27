@@ -1,11 +1,15 @@
+/* GLOBAL */
+
 body {
-  background-color: #ebf0ff;
+  background-color: #ffffff;
   font-family: "IM Fell English SC", serif;
 }
 
 ul {
   list-style: none;
 }
+
+/* IDS */
 
 #header {
   font-size: 50px;
@@ -27,7 +31,7 @@ ul {
   font-family: "IM Fell English SC", serif;
   font-size: 18px;
   text-align: center;
-  background-color: #ebf0ff;
+  background-color: #ffffff;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -38,7 +42,7 @@ ul {
   height: 40px;
   border-radius: 5px;
   border: 2px solid #070606;
-  background-color: #ebf0ff;
+  background-color: #ffffff;
   color: #070606;
   font-family: "IM Fell English SC", serif;
   font-size: 20px;
@@ -47,6 +51,8 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* CLASSES */
 
 .hex-box {
   display: flex;
