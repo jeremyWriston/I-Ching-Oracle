@@ -91,7 +91,6 @@ axios.get('https://jeremywriston.github.io/Data/iching_wilhelm_translation.json'
 //PULL JSON DATA BASED ON BINARIES
 function getData() {
     for(let item in data) {
-        //console.log((typeof `${data[item].binary}`));
         if (`${data[item].binary}` === hex1Bin) {
             hex1Data = data[item];
         }
