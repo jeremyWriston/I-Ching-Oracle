@@ -1,88 +1,132 @@
 /* GLOBAL */
 
+/* RESET */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: 400;
+}
+
 body {
-  background-color: #ffffff;
-  font-family: "IM Fell English SC", serif;
+	line-height: 1.5;
+	min-height: 100vh;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
-/* IDS */
-
-#header {
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  margin: 30px 0px 10px 0px;
-  width: 100vw;
+img,
+picture {
+	max-width: 100%;
+	display: block;
 }
 
-#form {
-  margin: 10px 0px 20px;
+input,
+button,
+textarea,
+select {
+	font: inherit;
 }
 
-#question {
-  width: 50%;
-  border: 0;
-  border-bottom: 2px solid #070606;
-  outline: 0;
-  font-family: "IM Fell English SC", serif;
-  font-size: 18px;
-  text-align: center;
-  background-color: #ffffff;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+@media (prefers-reduced-motion: reduce) {
+	*. *::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
-#button {
-  width: 220px;
-  height: 40px;
-  border-radius: 5px;
-  border: 2px solid #070606;
-  background-color: #ffffff;
-  color: #070606;
-  font-family: "IM Fell English SC", serif;
-  font-size: 20px;
-  display: block;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* CLASSES */
+/* CLASSES  */
 
 .hex-box {
-  display: flex;
-  flex-direction: row;
-  margin: 50px 10%;
 }
 
 .hex-lines {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .lines {
-  display: block;
-  padding: 5px 0px;
-  margin-right: 50px;
-  margin-left: 50px;
-  width: 300px;
-  height: 30px;
+	display: block;
+	padding: 5px 0px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 10em;
+	height: 1.5em;
 }
 
 .changing-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 50px 20%;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 50px 20%;
+	text-align: center;
 }
 
 .changing-line > h3 {
-  color: #a10e22;
+	color: #a10e22;
+}
+
+/* ID'S */
+
+#header {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+
+#form {
+	margin: 10px 0px 20px;
+}
+
+#question {
+	width: 50%;
+	border: 0;
+	border-bottom: 2px solid #070606;
+	outline: 0;
+	text-align: center;
+	background-color: #ffffff;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#button {
+	width: 220px;
+	height: 40px;
+	border-radius: 5px;
+	border: 2px solid #070606;
+	background-color: #ffffff;
+	color: #070606;
+	display: block;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
 }

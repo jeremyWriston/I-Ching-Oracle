@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Ching Web</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+  <div class="header-container">
+    <h1 id="header">iChing</h1>
+  </div>
+
+<!-- FORM -->
+
+  <form id="form" action="">
+    <input id="question" type='text' placeholder="Enter question here..."></input>
+    <button id="button">Generate Hexagram(s)</button>
+  </form>
+
+<!-- HEXAGRAM 1 -->
+
+  <div class="hex-box">
+    <div id="hex1-box" class="hex-lines">
+      <img id="hex1-ln6" class="lines" src="yang.png">
+      <img id="hex1-ln5" class="lines" src="yin.png">
+      <img id="hex1-ln4" class="lines" src="yinchanging.png">
+      <img id="hex1-ln3" class="lines" src="yinchanging.png">
+      <img id="hex1-ln2" class="lines" src="yang.png">
+      <img id="hex1-ln1" class="lines" src="yinchanging.png">
+    </div>
+    <div class="hex-text">
+      <h2 id="hex1-title">4. Mêng / Youthful Folly</h2>
+      <ul>
+        <li id="hex1-above">KEEPING STILL, MOUNTAIN</li>
+        <li id="hex1-below">THE ABYSMAL, WATER</li>
+      </ul>
+      <h3 id="hex1-judgment">THE JUDGEMENT</h3>
+      <p id="hex1-judgment-text">YOUTHFUL FOLLY has success.<br>
+        It is not I who seek the young fool;<br>
+        The young fool seeks me.<br>
+        At the first oracle I inform him.<br>
+        If he asks two or three times, it is importunity.<br>
+        If he importunes, I give him no information.<br>
+        Perseverance furthers.</p>
+      <h3 id="hex1-image">THE IMAGE</h3>
+      <p id="hex1-image-text">A spring wells up at the foot of the mountain:<br>
+        The image of YOUTH.<br>
+        <br>
+        Thus the superior man fosters his character<br>
+        By thoroughness in all that he does.</p>
+    </div>
+  </div>
+
+<!-- CHANGING LINES -->
+
+  <div class="changing-box">
+    <div id="changing-line-div" class="changing-line">
+      
+      <h3>Six at the beginning means:</h3>
+      <p>In punishing folly<br>
+        It does not further one<br>
+        To commit transgressions.<br>
+        The only thing that furthers<br>
+        Is to prevent transgressions.</p>
+      <h3>Six in the third place means:</h3>
+      <p>Take not a maiden who,<br>
+        When she sees a man of bronze,<br>
+        Loses possession of herself.<br>
+        Nothing furthers.</p>
+      <h3>Six in the fourth place means:</h3>
+      <p>Entangled folly bring humiliation.</p>
+     
+    </div>
+  </div>
+
+<!-- HEXAGRAM 2-->
+
+  <div class="hex-box">
+    
+    <div id="hex2-box" class="hex-lines">
+      <img id="hex2-ln6" class="lines" src="yang.png">
+      <img id="hex2-ln5" class="lines" src="yin.png">
+      <img id="hex2-ln4" class="lines" src="yang.png">
+      <img id="hex2-ln3" class="lines" src="yang.png">
+      <img id="hex2-ln2" class="lines" src="yang.png">
+      <img id="hex2-ln1" class="lines" src="yang.png">
+    </div>
+
+    <div class="hex-text">
+      <h2 id="hex2-title">14. Ta Yu / Possession in Great Measure</h2>
+      <ul>
+        <li id="hex2-above">THE CLINGING, FLAME</li>
+        <li id="hex2-below">THE CREATIVE, HEAVEN</li>
+      </ul>
+      <h3 id="hex2-judgment">THE JUDGEMENT</h3>
+      <p id="hex2-judgment-text">POSSESSION IN GREAT MEASURE.<br>
+        <br>
+        Supreme success.</p>
+      <h3 id="hex2-image">THE IMAGE</h3>
+      <p id="hex2-image-text">Fire in heaven above:<br>
+        <br>
+        The image of POSSESSION IN GREAT MEASURE.<br>
+        Thus the superior man curbs evil and furthers good,<br>
+        And thereby obeys the benevolent will of heaven.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

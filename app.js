@@ -147,8 +147,8 @@ function presentData() {
 		'#hex1-below'
 	).innerText = `below ${below1Chinese}: ${below1Symbolic} ${below1Alchemical}`;
 
-	document.querySelector('#hex1-judgement').innerText = 'THE JUDGMENT';
-	document.querySelector('#hex1-judgement-text').innerText =
+	document.querySelector('#hex1-judgment').innerText = 'THE JUDGMENT';
+	document.querySelector('#hex1-judgment-text').innerText =
 		hex1Data.wilhelm_judgment.text;
 
 	document.querySelector('#hex1-image').innerText = 'THE IMAGE';
@@ -173,8 +173,8 @@ function presentData() {
 			'#hex2-below'
 		).innerText = `below ${below2Chinese}: ${below2Symbolic} ${below2Alchemical}`;
 
-		document.querySelector('#hex2-judgement').innerText = 'THE JUDGMENT';
-		document.querySelector('#hex2-judgement-text').innerText =
+		document.querySelector('#hex2-judgment').innerText = 'THE JUDGMENT';
+		document.querySelector('#hex2-judgment-text').innerText =
 			hex2Data.wilhelm_judgment.text;
 
 		document.querySelector('#hex2-image').innerText = 'THE IMAGE';
